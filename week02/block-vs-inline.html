@@ -15,25 +15,31 @@
             boundaries.</p>
 
         <h2>Task 1: Swap Block and Inline Elements</h2>
-        <div>In the HTML of this document, change this div element to a span element.</div>
+        <span>In the HTML of this document, change this div element to a span element.</span>
 
-        <p class="question">What happens to the layout? Does it still take up the full width?</p>
+        <p class="question">What happens to the layout? Does it still take up the full width? </p>
+        <p class="answer"> The whole phrase is highlighted, and it only covers the text content. There isn't a
+            full-width block.</p>
 
         <h2>Task 2: Nesting Inline in Block</h2>
-        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span></p>
+        <p><em> A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</em></span></p>
         <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
             how it flows within the line.</p>
+        <p class="answer"> Using the &lt;em&gt; element, the whole phrase is now in italic.</p>
 
-        <h2>Task3: Nesting Block in Inline</h2>
-        <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
-            <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <h2>Task 3: Nesting Block in Inline</h2>
+        <span>Try <div> placing </div> a &lt;div&gt; inside a &lt;span&gt; element.</span>
+        <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <p class="answer"> The line is broken by a full-widht div element, istead of continuing on the same line. </p>
 
 
-            <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
+        <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
         &lt;img&gt; element
         <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300" height="300">
         <a href="https://churchofjesuschrist.org">&lt;a&gt; anchor element</a>
         <button type="button">&lt;button&gt; element</button>
+        <p class="answer"> They're on the same line, even with different sizes, because they are inline elements without
+            a div element.</p>
     </main>
 </body>
 
