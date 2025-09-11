@@ -10,7 +10,7 @@ nav a {
 }
 
 h1 {
-    color: rgb(0, 0, 139);
+    color: rgb(0, 0, 138);
 }
 
 main img {
@@ -33,7 +33,7 @@ aside {
     width: 20em;
     margin: 1em;
     padding: 1em ;
-    border: 1px rgba(0, 0, 0, 0.2);
+    border: 1px;
     background-color: #eee;
     color: #333 ;
     text-align: center;
