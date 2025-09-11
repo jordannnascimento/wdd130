@@ -32,11 +32,10 @@ aside {
 width: 20rem;
 margin: 1rem;
 padding: 1rem ;
-border: 1px solid rgba (0, 0, 0, 0.2);
-background-color: #eee;
+border: 1px solid (0, 0, 0, 0.2);
+background-color:#eee;
 color:#333 ;
 text-align: center;
-
 }
 
 aside img {
