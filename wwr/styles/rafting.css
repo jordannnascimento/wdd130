@@ -5,10 +5,10 @@
 }
 
 :root{
-    --primary-color:#297373;
+    --primary-color:#064302;
     --secondary-color:#FF8552;
     --third-color:#E9D758;
-    --heading-font:Open, sans-serif;
+    --heading-font:Arial, Helvetica, sans-serif;
     --font-body:Arial, Helvetica, sans-serif;
 }
 
@@ -24,7 +24,6 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    
     
 }
 
@@ -47,15 +46,15 @@ nav, p, section, article{
     height: auto;
 }
 
-h1{
+.hero h1{
     position: absolute;
-    top: 10px;
+    top: 20px;              
     width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.8;
-    background-color: #064302;
-    color:white;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .hero article img{
@@ -67,13 +66,14 @@ h1{
 
 .hero article{
     position: absolute;
-    bottom: 10px;
-    margin: 10px;
+    bottom: 20px;           
+    left: 20px;             
+    right: 20px;           
     padding: 20px;
-    border: 20px;
-    background-color: #064302;
+    background-color: var(--primary-color);
     opacity: 0.9;
-    color: #ffffff;
+    color: white;
+    clear: both;
     
 }
 
