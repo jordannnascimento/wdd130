@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary-color:#064302;
+    --primary-color:#020f43;
     --secondary-color:#FF8552;
     --third-color:#E9D758;
     --heading-font:Arial, Helvetica, sans-serif;
@@ -66,12 +66,9 @@ nav, p, section, article{
 
 .hero article{
     position: absolute;
-    bottom: 20px;           
-    left: 20px;             
-    right: 20px;           
-    padding: 20px;
+    top:100px;                    
+    padding: 10px;
     background-color: var(--primary-color);
-    opacity: 0.9;
     color: white;
     clear: both;
     
@@ -83,6 +80,6 @@ section h2 {
     width: 100%;
     display: block;
     color: #FFC568;
-    background-color:#064302;
+    background-color:var(--primary-color);
     text-align: center;
 }
