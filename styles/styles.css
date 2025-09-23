@@ -23,17 +23,24 @@ body{
 nav {
     background-color: var(--primary-color);
     padding: var(--medium-padding);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: var(--secondary-color);
     display: block;
-    padding: var(--big-padding);
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
 }
 
 h1 {
     padding:1rem;
     color: rgb(0, 0, 138);
+    border: bottom 1px #000;
 }
 
 main img {
@@ -51,13 +58,17 @@ p {
 }
 
 main {
-    max-width: 640px;
+    margin: 1rem;
+    grid-column: 2/3;
+
 }
 
 aside {
     width: 20em;
     text-align: center;
     position: relative;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 aside img {
@@ -89,4 +100,15 @@ footer {
 
 .indent{
     padding-left: 2rem;
+}
+
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+
 }
