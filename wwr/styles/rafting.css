@@ -1,33 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --primary-color:#020f43;
-    --secondary-color:#FF8552;
-    --third-color:#E9D758;
-    --heading-font:Arial, Helvetica, sans-serif;
-    --font-body:Arial, Helvetica, sans-serif;
+:root {
+    --primary-color: #020f43;
+    --secondary-color: #FF8552;
+    --third-color: #E9D758;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --font-body: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     font-family: var(--font-body);
     color: var(--primary-color);
 }
 
-main, footer {
-    width: 840px;
+/* ALTERAÇÃO 2: Regra unificada para header, main e footer terem a mesma largura */
+header, main, footer {
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+/* A margem superior do header foi mantida para espaçamento */
+header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
 }
 
 h1, h2 {
     font-family: var(--heading-font);
-    
 }
 
-nav, p, section, article{
+nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
@@ -40,15 +50,15 @@ nav, p, section, article{
     position: relative;
 }
 
-.hero img { 
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1{
+.hero h1 {
     position: absolute;
-    top: 20px;              
+    top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -57,58 +67,44 @@ nav, p, section, article{
     color: white;
 }
 
-.hero article img{
+.hero article img {
     float: right;
     width: 125px;
     margin: 10px;
-    
 }
 
-.hero article{
+.hero article {
     position: absolute;
-    bottom: 10px;       
+    bottom: 10px;
     left: 10px;
-    right: 10px;                    
+    right: 10px;
     padding: 10px;
     background-color: var(--primary-color);
     color: white;
     opacity: 0.8;
-    
 }
 
-section h2 {
-    margin: 0;
+/* ALTERAÇÃO 3: A regra agora usa a classe .section-title em vez do seletor genérico "section h2" */
+.section-title {
+    margin: 0 0 20px 0; /* Adicionado margem inferior para espaçamento */
     padding: 10px 0;
     width: 100%;
-    display: block;
     color: #FFC568;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     text-align: center;
-}
-
-
-header{
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
-    
 }
 
 .navigation {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    
 }
 
 .navigation a {
     display: block;
     padding: 1rem;
-    text-decoration: none; 
-    color: #333; 
+    text-decoration: none;
+    color: #333;
 }
 
 .navigation a:hover {
@@ -117,10 +113,10 @@ header{
 }
 
 .history-content {
-    display: grid; 
-    grid-template-columns: 1fr auto 1fr; 
-    align-items: center; 
-    gap: 20px; 
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
 }
 
 .history-content img {
@@ -132,29 +128,23 @@ header{
     margin: 40px 0;
 }
 
-.adventures h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
+/* BÔNUS: Implementando a sugestão do instrutor com Grid Layout */
 .adventure-gallery {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cria 5 colunas de tamanho igual */
     gap: 15px;
 }
 
 .adventures figure {
     margin: 0;
     text-align: center;
-    width: 160px;
+    /* A largura agora é controlada pelo grid, então a propriedade width foi removida */
 }
-
 
 .adventures figure img {
     width: 100%;
-    height: 120px;     
-    object-fit: cover; 
+    height: 120px;
+    object-fit: cover;
     border: 2px solid #eee;
 }
 
@@ -165,21 +155,20 @@ header{
 }
 
 footer {
-    display: flex;                 
-    justify-content: space-between; 
-    align-items: center;           
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 25px 0;
     margin-top: 50px;
     border-top: 1px solid #ccc;
 }
 
-
 .socialmedia {
-    display: flex;    
-    gap: 20px;       
+    display: flex;
+    gap: 20px;
 }
 
 .socialmedia img {
-    width: 35px;      
+    width: 35px;
     height: auto;
 }
