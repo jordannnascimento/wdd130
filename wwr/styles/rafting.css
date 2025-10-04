@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,18 +14,15 @@
     --font-body: Arial, Helvetica, sans-serif;
 }
 
+
 body {
     font-family: var(--font-body);
     color: var(--primary-color);
-}
-
-/* ALTERAÇÃO 2: Regra unificada para header, main e footer terem a mesma largura */
-header, main, footer {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* A margem superior do header foi mantida para espaçamento */
+
 header {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -32,6 +31,13 @@ header {
     align-items: center;
     border-bottom: 1px solid #ccc;
 }
+
+
+header img {
+    width: 100px;
+}
+
+
 
 h1, h2 {
     font-family: var(--heading-font);
@@ -84,9 +90,8 @@ nav, p, section, article {
     opacity: 0.8;
 }
 
-/* ALTERAÇÃO 3: A regra agora usa a classe .section-title em vez do seletor genérico "section h2" */
 .section-title {
-    margin: 0 0 20px 0; /* Adicionado margem inferior para espaçamento */
+    margin: 0 0 20px 0;
     padding: 10px 0;
     width: 100%;
     color: #FFC568;
@@ -128,17 +133,15 @@ nav, p, section, article {
     margin: 40px 0;
 }
 
-/* BÔNUS: Implementando a sugestão do instrutor com Grid Layout */
 .adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Cria 5 colunas de tamanho igual */
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
 }
 
 .adventures figure {
     margin: 0;
     text-align: center;
-    /* A largura agora é controlada pelo grid, então a propriedade width foi removida */
 }
 
 .adventures figure img {
