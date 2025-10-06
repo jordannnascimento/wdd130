@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Minimalista</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div id="game-container">
+        <div id="player"></div>
+        <div id="message-box"></div>
+
+        <div class="level-wall" id="main-floor"></div>
+        <div class="level-wall" id="right-wall-niche"></div>
+        <div class="level-wall" id="left-platform"></div>
+
+        <div class="floor-rail" style="left: 40px;"></div>
+        <div class="floor-rail" style="left: 80px;"></div>
+        <div class="floor-rail" style="left: 120px;"></div>
+        <div class="floor-rail" style="left: 160px;"></div>
+        <div class="t-platform" style="left: 200px;"></div>
+        <div class="floor-rail" style="left: 240px;"></div>
+        <div class="floor-rail" style="left: 280px;"></div>
+        <div class="floor-rail" style="left: 320px;"></div>
+        <div class="t-platform" style="left: 360px;"></div>
+        <div class="floor-rail" style="left: 400px;"></div>
+        <div class="floor-rail" style="left: 440px;"></div>
+        <div class="floor-rail" style="left: 480px;"></div>
+        <div class="t-platform" style="left: 520px;"></div>
+        <div class="floor-rail" style="left: 560px;"></div>
+        <div class="floor-rail" style="left: 600px;"></div>
+        <div class="floor-rail" style="left: 640px;"></div>
+
+        <div class="ceiling-trap" style="left: 200px;"></div>
+        <div class="ceiling-trap" style="left: 280px;"></div>
+        <div class="ceiling-trap" style="left: 440px;"></div>
+        <div class="ceiling-trap" style="left: 520px;"></div>
+        <div class="ceiling-trap" style="left: 600px;"></div>
+        <div id="center-trap"></div>
+
+        <div id="goal-object"></div>
+        <div id="chest"></div>
+        <div id="key"></div>
+    </div>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="question">Qual o destino da nossa viagem dos sonhos?</h2>
+            <button class="option">Japão</button>
+            <button class="option" id="correct-answer">Itália</button>
+            <button class="option">Egito</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
