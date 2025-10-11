@@ -100,7 +100,7 @@ footer p {
 .hero img {
     display: block;
     width: 100%;
-    max-height: 500px;
+    height: auto;
 }
 
 
@@ -182,10 +182,9 @@ footer p {
     background-color: var(--primary-color);
     color: white;
     border: none;
-    cursor: pointer;
     font-size: 1em;
     font-weight: bold;
-    transition: background-color 0.3s;
+    
 }
 
 .subscribe-button:hover {
@@ -224,7 +223,7 @@ footer p {
 .cta h3 {
     color: var(--secondary-color);
     margin-bottom: 10px;
-    transition: color 0.3s;
+    
 }
 
 .cta a:hover h3 {
@@ -264,10 +263,6 @@ footer p {
     height: 200px;
     object-fit: cover;
     transition: transform 0.3s;
-}
-
-.trip-offers img:hover {
-    transform: scale(1.05);
 }
 
 .trip-offers figcaption {
