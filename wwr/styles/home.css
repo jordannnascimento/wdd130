@@ -92,7 +92,6 @@ footer p {
 }
 
 
-
 .hero {
     position: relative;
     margin-bottom: 30px; 
@@ -101,8 +100,7 @@ footer p {
 .hero img {
     display: block;
     width: 100%;
-    height: 400px; 
-    object-fit: cover;
+    max-height: 500px;
 }
 
 
