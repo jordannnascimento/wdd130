@@ -95,8 +95,6 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
     margin: 30px 0;
 }
-
-
 /* --- 2. HOME PAGE STYLES --- */
 
 .hero-home {
@@ -137,30 +135,25 @@ hr {
     z-index: 10;
     width: fit-content;
 }
-
 .call-to-action:hover {
     background-color: var(--third-color);
     color: var(--primary-color);
 }
-
 .newsletter-form {
     background-color: #f4f4f4;
     padding: 30px;
     text-align: center;
     margin: 30px 0;
 }
-
 .newsletter-form h2 {
     margin-bottom: 20px;
 }
-
 .newsletter-form form {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-
 .form-row {
     display: flex;
     align-items: center;
@@ -281,8 +274,6 @@ hr {
 .all-trips-button:hover {
     background-color: var(--secondary-color);
 }
-
-
 /* --- 3. ABOUT US PAGE STYLES --- */
 
 .hero-about {
