@@ -23,83 +23,85 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="hero">
-            <div class="hero-contact">
-                <h1>White Water Rafting Company</h1>
-                <article>
-                    <p>123 Main River Street <br>
-                        Kolob, California <br>
-                        +1 999 999 9999 <br>
-                        info@whitewater.com
-                    </p>
-                </article>
+        <div class="hero-contact">
+            <h1>Whitewater Rafting Company</h1>
+            <article>
+                <p>123 Main River Street <br>
+                    Kolob, California <br>
+                    +1 999 999 9999 <br>
+                    info@whitewater.com
+                </p>
+            </article>
+        </div>
+
+        <div class="contact-grid">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50456.3987829289!2d-113.01692235!3d37.291732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca8d3362141569%3A0x6b5c3da68114ac9a!2sKolob%2C%20UT%2C%20USA!5e0!3m2!1sen!2sbr!4v1677271858022!5m2!1sen!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="contact-grid">
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50456.3987829289!2d-113.01692235!3d37.291732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca8d3362141569%3A0x6b5c3da68114ac9a!2sKolob%2C%20UT%2C%20USA!5e0!3m2!1sen!2sbr!4v1677271858022!5m2!1sen!2sbr"
-                        width="600" height="450" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <form action="thankyou.html" method="post" id="contact-form">
+                <fieldset>
+                    <legend>Send Us a Message</legend>
 
-                <form action="thankyou.html" method="post">
-                    <fieldset>
-                        <legend>Send Us a Message</legend>
+                    <div class="form-item">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="form-item">
+                        <label for="useremail">Email:</label>
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
 
-                        <div class="form-item">
-                            <label for="fullname">Full Name:</label>
-                            <input type="text" id="fullname" name="fullname">
+                    <div class="form-item radio-group">
+                        <p>Message Purpose</p>
+                        <div class="radio-options">
+                            <label><input type="radio" id="purpose-general" name="purpose" value="general"> General
+                                Inquiry</label>
+                            <label><input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                                Reservation Question</label>
+                            <label><input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                                Website Suggestion</label>
                         </div>
-                        <div class="form-item">
-                            <label for="useremail">Email:</label>
-                            <input type="email" id="useremail" name="useremail">
-                        </div>
+                    </div>
 
-                        <div class="form-item radio-group">
-                            <p>Message Purpose</p>
-                            <div class="radio-options">
-                                <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
-                                <label><input type="radio" name="purpose" value="reservation"> Reservation
-                                    Question</label>
-                                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-                            </div>
-                        </div>
+                    <div class="form-item">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
 
-                        <div class="form-item">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5"></textarea>
-                        </div>
+                    <div class="form-item subscribe-item">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                </fieldset>
 
-                        <div class="form-item subscribe-item">
-                            <input type="checkbox" id="subscribe" name="subscribe">
-                            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                        </div>
-                    </fieldset>
+                <button type="submit" id="submit-btn" class="btn btn-secondary">Get in Touch!</button>
+            </form>
+        </div>
 
-                    <button type="submit">Get in Touch!</button>
-                </form>
+        <section class="page-section employees">
+            <h2 class="section-heading">We Are Here to Serve You</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee Profile Picture">
+                    <figcaption>Jane Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee Profile Picture">
+                    <figcaption>John Smith - Operations</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee Profile Picture">
+                    <figcaption>Clark Kent - Customer Service</figcaption>
+                </figure>
             </div>
-
-            <section class="employees">
-                <h2>We Are Here to Serve You</h2>
-                <div class="employee-profiles">
-                    <figure>
-                        <img src="images/employee1.jpg" alt="Employee Profile Picture">
-                        <figcaption>Jane Doe - Lead Guide</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee2.jpg" alt="Employee Profile Picture">
-                        <figcaption>John Smith - Operations</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee3.jpg" alt="Employee Profile Picture">
-                        <figcaption>Clark Kent - Customer Service</figcaption>
-                    </figure>
-                </div>
-            </section>
+        </section>
     </main>
+
     <footer>
         <p>&copy;2025 | Whitewater Rafting Company, Jordann Santos</p>
         <nav class="socialmedia">
