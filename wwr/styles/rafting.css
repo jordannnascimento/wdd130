@@ -1,3 +1,5 @@
+/* --- 1. COMMON / GLOBAL STYLES (for all pages) --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,90 +9,38 @@
 :root {
     --primary-color: #020f43;
     --secondary-color: #FF8552;
+    --accent-color: #E9D758;
     --third-color: #E9D758;
-    --heading-font: Arial, Helvetica, sans-serif;
-    --font-body: Arial, Helvetica, sans-serif;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
 }
 
-
 body {
-    font-family: var(--font-body);
+    font-family: var(--paragraph-font);
     color: var(--primary-color);
     max-width: 1000px;
     margin: 0 auto;
 }
 
-
 header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+    width: 840px;
+    margin: 0 auto;
 }
 
 header {
-    display: flex;                  
-    justify-content: space-between; 
-    align-items: center;            
-    padding: 1rem 0;              
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin: 10px;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: white;
-    opacity: 0.8;
-}
-
-.section-title {
-    margin: 0 0 20px 0;
-    padding: 10px 0;
-    width: 100%;
-    color: #FFC568;
-    background-color: var(--primary-color);
-    text-align: center;
 }
 
 .navigation {
@@ -109,6 +59,273 @@ nav, p, section, article {
 .navigation a:hover {
     background-color: #f0f0f0;
     color: #0077B6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    padding: 0 24px;
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 20px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    margin: 30px 0;
+}
+
+
+/* --- 2. HOME PAGE STYLES --- */
+
+.hero-home {
+    position: relative;
+    margin-bottom: 30px;
+}
+.hero-home img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+.hero-home h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    color: white;
+    z-index: 10;
+}
+
+.call-to-action {
+    display: block;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    z-index: 10;
+    width: fit-content;
+}
+
+.call-to-action:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+.newsletter-form {
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.newsletter-form h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-form label {
+    font-weight: bold;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.subscribe-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.promotional-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    gap: 30px;
+    text-align: center;
+}
+
+.cta {
+    width: 50%;
+    text-align: center;
+}
+
+.cta a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.cta img {
+    width: 100%;
+    max-width: 380px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.cta h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.cta a:hover h3 {
+    color: var(--primary-color);
+}
+
+.cta p {
+    padding: 0 10px;
+}
+
+.trip-grid {
+    text-align: center;
+    padding: 30px 0 50px 0;
+}
+
+.trip-grid h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: var(--secondary-color);
+}
+
+.trip-offers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.trip-offers figure {
+    margin: 0;
+    text-align: center;
+}
+
+.trip-offers img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.trip-offers figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.all-trips-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.all-trips-button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* --- 3. ABOUT US PAGE STYLES --- */
+
+.hero-about {
+    position: relative;
+}
+.hero-about img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero-about h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    color: white;
+}
+.hero-about article {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    opacity: 0.8;
+}
+.hero-about article img {
+    float: right;
+    width: 125px;
+    margin: 10px;
+}
+
+.section-title {
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    width: 100%;
+    color: #FFC568;
+    background-color: var(--primary-color);
+    text-align: center;
 }
 
 .history-content {
@@ -151,27 +368,303 @@ nav, p, section, article {
     color: var(--primary-color);
 }
 
-footer {
+
+/* --- 4. TRIPS PAGE STYLES --- */
+
+.hero-trips {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.hero-trips img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+.hero-trips h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-details {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 40px auto;
+    background-color: #f4f4f4;
+    width: 95%;
+}
+
+.trip-details h2 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.trip-details p, .trip-details ul, .trip-details li {
+    margin: 8px 0;
+    padding: 0;
+}
+
+.trip-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: start;
+    padding: 10px;
+}
+
+.trip-content img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.trip-info h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.trip-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.trip-table {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.trip-table h2 {
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    width: 100%;
+    color: #FFC568;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.cta-contact {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--third-color);
+    margin-top: 40px;
+}
+
+.cta-contact p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background-color: var(--primary-color);
+}
+
+
+/* --- 5. CONTACT US PAGE STYLES --- */
+
+.hero-contact {
+    text-align: center;
+    margin: 2rem 0;
+}
+.hero-contact h1 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    align-items: stretch;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+form {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.form-item {
+    margin-bottom: 1rem;
+}
+
+.form-item p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-item label {
+    font-weight: normal;
+}
+
+.subscribe-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
-    margin-top: 50px;
+}
+
+.subscribe-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.subscribe-item label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+
+.employees {
+    text-align: center;
+    margin: 3rem 0;
+    padding-top: 2rem;
     border-top: 1px solid #ccc;
+    background-color: #eee;
 }
 
-footer p {
-    padding: 0 24px;
-    margin: 0; 
-   
+.employees h2 {
+    margin-bottom: 2rem;
 }
 
-.socialmedia {
+.employee-profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.employee-profiles figure {
+    margin: 0;
+}
+
+.employee-profiles img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.employee-profiles figcaption {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.form-item.radio-group {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
+    margin-bottom: 1rem;
 }
 
-.socialmedia img {
-    width: 35px;
-    height: auto;
+.radio-group p {
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    padding-top: 5px;
+    white-space: nowrap;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
 }

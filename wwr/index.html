@@ -8,7 +8,7 @@
     <meta name="description"
         content="Experience the thrill of whitewater rafting! Book your unforgettable adventure today with Whitewater Rafting Company. Safe, fun, and memorable trips for all skill levels.">
     <meta name="author" content="Jordann Santos">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -26,67 +26,69 @@
 
     <main>
         <div class="hero">
-            <img src="images/group-rafting.jpg" alt="Beatiful River">
-            <h1>Experience the Adventure of a Lifetime!</h1>
-            <a href="contact.html" class="call-to-action">Book Your Trip Now!</a>
-        </div>
+            <div class="hero-home">
+                <img src="images/group-rafting.jpg" alt="Beatiful River">
+                <h1>Experience the Adventure of a Lifetime!</h1>
+                <a href="contact.html" class="call-to-action">Book Your Trip Now!</a>
+            </div>
 
-        <section class="newsletter-form">
-            <h2>Subscribe to Our Newsletter!</h2>
-            <form action="thankyou.html" method="post">
-                <div class="form-row">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <section class="newsletter-form">
+                <h2>Subscribe to Our Newsletter!</h2>
+                <form action="thankyou.html" method="post">
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+            </section>
+
+            <hr>
+
+            <section class="promotional-grid">
+                <div class="cta">
+                    <a href="trips.html">
+                        <img src="images/boat.jpg" alt="Clientes em um bote no rio">
+                        <h3>Explore Our Trips!</h3>
+                    </a>
+                    <p>From gentle floats to thrilling rapids, find the perfect adventure for you and your family. View
+                        our
+                        detailed itineraries!</p>
                 </div>
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="cta">
+                    <a href="contact.html">
+                        <img src="images/adventure.jpg" alt="Guia de rafting amigável">
+                        <h3>Meet Our Guides!</h3>
+                    </a>
+                    <p>Our experienced and certified guides are ready to lead your adventure safely. Contact us to learn
+                        more about our team and safety standards.</p>
                 </div>
-                <button type="submit" class="subscribe-button">Subscribe</button>
-            </form>
-        </section>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section class="promotional-grid">
-            <div class="cta">
-                <a href="trips.html">
-                    <img src="images/boat.jpg" alt="Clientes em um bote no rio">
-                    <h3>Explore Our Trips!</h3>
-                </a>
-                <p>From gentle floats to thrilling rapids, find the perfect adventure for you and your family. View our
-                    detailed itineraries!</p>
-            </div>
-            <div class="cta">
-                <a href="contact.html">
-                    <img src="images/adventure.jpg" alt="Guia de rafting amigável">
-                    <h3>Meet Our Guides!</h3>
-                </a>
-                <p>Our experienced and certified guides are ready to lead your adventure safely. Contact us to learn
-                    more about our team and safety standards.</p>
-            </div>
-        </section>
-
-        <hr>
-
-        <section class="trip-grid">
-            <h2>Featured Trips</h2>
-            <div class="trip-offers">
-                <figure>
-                    <img src="images/three-boats.jpg" alt="Clientes fazendo rafting">
-                    <figcaption>The Thrill Seeker</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/paddles.jpg" alt="Remos de barco">
-                    <figcaption>The Grand Expedition</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/happy.jpg" alt="Cliente feliz">
-                    <figcaption>The Family Fun Float</figcaption>
-                </figure>
-            </div>
-            <a href="trips.html" class="all-trips-button">See All Trips</a>
-        </section>
+            <section class="trip-grid">
+                <h2>Featured Trips</h2>
+                <div class="trip-offers">
+                    <figure>
+                        <img src="images/three-boats.jpg" alt="Clientes fazendo rafting">
+                        <figcaption>The Thrill Seeker</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/paddles.jpg" alt="Remos de barco">
+                        <figcaption>The Grand Expedition</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/happy.jpg" alt="Cliente feliz">
+                        <figcaption>The Family Fun Float</figcaption>
+                    </figure>
+                </div>
+                <a href="trips.html" class="all-trips-button">See All Trips</a>
+            </section>
     </main>
 
     <footer>
