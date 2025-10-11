@@ -23,21 +23,17 @@ body {
 }
 
 
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
 header {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 1rem 0;              
 }
-
-
-header img {
-    width: 100px;
-}
-
-
 
 h1, h2 {
     font-family: var(--heading-font);
