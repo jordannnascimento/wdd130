@@ -30,7 +30,7 @@ header {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
-nav, p, section, article {
+nav, p, section {
     margin: 16px;
     padding: 8px;
 }
@@ -203,9 +203,6 @@ footer {
     gap: 20px;
     margin-bottom: 30px;
 }
-.adventure-gallery figure { 
-    text-align: center;
-}
 .trip-offers img {
     width: 100%;
     height: 200px;
@@ -252,6 +249,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
+    text-align: center;
 }
 .adventure-gallery img {
     width: 100%;
@@ -287,6 +285,9 @@ footer {
 .trip-info h3 {
     margin-top: 0;
     color: var(--primary-color);
+}
+.trip-info p {
+    text-align: justify;
 }
 .trip-info ul {
     list-style: none;
@@ -401,7 +402,6 @@ form .btn {
     display: flex;
     flex-direction: column;
 }
-
 
 
 
