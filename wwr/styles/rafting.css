@@ -61,9 +61,6 @@ footer {
     display: flex;
     gap: 20px;
 }
-.socialmedia a {
-    text-decoration: none;
-}
 .socialmedia img {
     width: 35px;
     height: auto;
@@ -184,7 +181,7 @@ footer {
 .cta {
     width: 50%;
 }
-.cta a {
+.cta a, .socialmedia a {
     text-decoration: none;
     color: inherit;
 }
@@ -296,6 +293,7 @@ footer {
     list-style: none;
     padding-left: 0;
     font-size: 1.1em;
+    margin-bottom: 20px; /* Spacing for the paragraph below */
 }
 .trip-table {
     text-align: center;
@@ -334,19 +332,18 @@ footer {
     gap: 2rem;
     align-items: stretch;
 }
+.map iframe, form fieldset {
+    border: 0; /* Combined to save a selector */
+}
 .map iframe {
     width: 100%;
     height: 100%;
-    border: 0;
 }
 form {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-}
-form fieldset {
-    border: none;
 }
 form legend {
     font-size: 1.5em;
@@ -391,16 +388,23 @@ form .btn {
 }
 .radio-group {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Aligns text to the top of the radio buttons */
     gap: 20px;
 }
 .radio-group p {
     font-weight: bold;
     flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    width: 85px; /* Allows text to wrap */
 }
 .radio-options {
     display: flex;
     flex-direction: column;
 }
+
+
+
+
 
 
