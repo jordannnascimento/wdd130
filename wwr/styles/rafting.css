@@ -230,6 +230,7 @@ footer {
     padding: 10px;
     background-color: rgba(2, 15, 67, 0.8);
     color: white;
+    text-align: left; /* ADICIONE ESTA LINHA */
 }
 .hero-about article img {
     float: right;
@@ -288,6 +289,8 @@ footer {
 }
 .trip-info p {
     text-align: justify;
+    margin: 0;
+    padding: 0;
 }
 .trip-info ul {
     list-style: none;
