@@ -332,12 +332,13 @@ footer {
     gap: 2rem;
     align-items: stretch;
 }
-.map iframe, form fieldset {
-    border: 0;
-}
 .map iframe {
+    border: 0;
     width: 100%;
     height: 100%;
+}
+form fieldset {
+    border: 0;
 }
 form {
     padding: 1rem;
